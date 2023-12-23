@@ -76,7 +76,8 @@ python3 -c 'import sys; sys.stdout.buffer.write(b"\x55\x48\x89\xe5\x48\xc7\xc0\x
  add [rax],al
  add [rax],al
  add [rax],al
- add [rax],al```
+ add [rax],al
+```
 
 ```
 $ texthex test.elf -w
