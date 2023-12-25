@@ -3,7 +3,8 @@ Read text section bytes and format it for shellcode.
 
 ![image](https://github.com/trimscash/elfmt/assets/42578480/47c7bf0d-bb58-4dc4-8e7b-8d7f1cbc7759)
 
-![image](https://github.com/trimscash/elfmt/assets/42578480/e057e7aa-6ebc-4884-a676-80d37c30937c)
+![image](https://github.com/trimscash/elfmt/assets/42578480/fc4daf84-8279-452c-93c3-5f938e9b5832)
+
 # Setup
 ```
 git clone https://github.com/trimscash/elfmt ~
