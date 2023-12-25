@@ -52,31 +52,31 @@ $ elfmt test.elf -aspd
 
 python3 -c 'import sys; sys.stdout.buffer.write(b"\x55\x48\x89\xe5\x48\xc7\xc0\x3b\x00\x00\x00\x48\x8d\x3c\x25\x24\x10\x40\x00\x48\x8d\x34\x25\x36\x10\x40\x00\x6a\x00\x48\x89\xe2\x0f\x05\xc9\xc3\x2f\x62\x69\x6e\x2f\x63\x61\x74\x00\x63\x61\x74\x00\x66\x6c\x61\x67\x00\x2d\x10\x40\x00\x00\x00\x00\x00\x31\x10\x40\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")'
 
- push rbp
- mov rbp,rsp
- mov rax,3Bh
- lea rdi,[401024h]
- lea rsi,[401036h]
- push 0
- mov rdx,rsp
- syscall
- leave
- ret
- (bad)
- imul ebp,[rsi+2Fh],746163h
- movsxd esp,[rcx+74h]
- add [rsi+6Ch],ah
- (bad)
- add [rel 404Bh],ch
- add [rax],al
- add [rcx],dh
- adc [rax],al
- add [rax],al
- add [rax],al
- add [rax],al
- add [rax],al
- add [rax],al
- add [rax],al
+push rbp
+mov rbp,rsp
+mov rax,3Bh
+lea rdi,[401024h]
+lea rsi,[401036h]
+push 0
+mov rdx,rsp
+syscall
+leave
+ret
+(bad)
+imul ebp,[rsi+2Fh],746163h
+movsxd esp,[rcx+74h]
+add [rsi+6Ch],ah
+(bad)
+add [rel 404Bh],ch
+add [rax],al
+add [rcx],dh
+adc [rax],al
+add [rax],al
+add [rax],al
+add [rax],al
+add [rax],al
+add [rax],al
+add [rax],al
 ```
 
 ```
