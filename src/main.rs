@@ -60,16 +60,12 @@ fn disassembled_shellcode(binary: &Vec<u8>, bit: u32) {
     let mut formatter = NasmFormatter::new();
     let mut output = String::new();
     while decoder.can_decode() {
-        // There's also a decode() method that returns an instruction but that also
-        // means it copies an instruction (40 bytes):
-        //     instruction = decoder.decode();
         decoder.decode_out(&mut instruction);
 
-        // Format the instruction ("disassemble" it)
         output.clear();
         formatter.format(&instruction, &mut output);
 
-        println!(" {}", output);
+        println!("{}", output);
     }
 }
 
