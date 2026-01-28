@@ -8,7 +8,7 @@ Read text section bytes and format it for shellcode.
 # Setup
 ```
 git clone https://github.com/trimscash/elfmt ~
-cd elfmt
+cd ~/elfmt
 cargo build -r
 echo "export PATH=\$PATH:\$HOME/elfmt/target/release" >> ~/.zshrc
 source ~/.zshrc
